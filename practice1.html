@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h4>HTML 실습문제 2번</h4>
+	<p>아래 화면과 똑같이 출력되는 HTML 코드를 작성하세요.</p>
+	<form action="#">
+		<fieldset>
+			<fieldset>
+			<legend>기본 정보</legend>
+			<label for="name">이름:</label>
+			<input type="text" id="name" name="name">
+			<label for="num">학번:</label>
+			<input type="text" id="num" name="num">
+			<button type="submit">조회</button>
+			</fieldset>	
+			<br>
+			<div>
+            <label for="area">지역:</label>
+			<select id="area" name="area">
+				<option value="option1">서울</option>
+				<option value="option2">경기</option>
+				<option value="option3">인천</option>
+				<option value="option4">강원</option>
+				<option value="option5">충청</option>
+				<option value="option6">전라</option>
+				<option value="option7">경상</option>
+				<option value="option8">제주</option>
+			</select>
+			<label for="interest">관심 분야:</label>
+			<input type="checkbox" id="interest1" name="interest1" value="option1">
+			<label for="interest1">프로그래밍</label>
+			<input type="checkbox" id="interest2" name="interest2" value="option2" checked>
+			<label for="interest2">디자인</label>
+			<input type="checkbox" id="interest3" name="interest3" value="option3">
+			<label for="interest3">마케팅</label>
+			<br><br>
+			</div>
+			<fieldset>
+				<legend>자기소개</legend>
+				<label for="introduction">동아리 활동:</label>
+				<textarea id="introduction" name="introduction" rows="4" cols="50" placeholder="참여했던 동아리 활동을 적어주세요."></textarea>
+			</fieldset>
+			<br>
+			<label for="search">검색 키워드:</label>
+			<input type="text" id="search" name="search">
+			<button type="submit">K1</button>
+			<button type="submit">K2</button>
+			<br><br>
+			<label for="working">작업 버튼</label>
+			<button type="submit">전송</button>
+			<button type="reset">초기화</button>
+		</fieldset>
+	</form>
+
+</body>
+</html>
