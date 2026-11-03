@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>profile form</title>
+  <style>
+  
+    .input-box {
+      border-radius: 5px;
+      border: 1px solid #bba4a4;
+      width: 70px;
+    }
+    .top-box {
+      padding: 15px;
+      width: 800px;
+      
+    }
+    .green{
+      background-color: rgb(72, 185, 72);
+      color: white;
+    }
+    .form-box {
+      border-radius: 5px;
+      border: 1px solid #bba4a4;
+      margin: 0 auto;
+    }
+    .login-box {
+      display: flex;
+      align-items: center; /* 세로 중앙 정렬 */
+      gap: 10px;           /* 요소 사이의 간격 자동 조절 */
+      /* 1. 박스의 너비와 안쪽 여백 설정 */
+    
+    padding: 20px;
+    
+    /* 2. 배경색과 테두리 선 지정 */
+    background-color: #f1f3f5; /* 연한 회색 배경 */
+    border: 1px solid #dcedc8;  /* 연두빛 또는 은은한 회색 테두리 */
+    
+    /* 3. 모서리를 둥글게 깎아주는 핵심 속성 */
+    border-radius: 15px;      /* 숫자가 클수록 더 둥글어집니다 */
+    
+    /* 4. 그림자 효과를 살짝 주고 싶을 때 (선택사항) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+    table,
+        th,
+        td {
+            border: 1px solid rgb(185, 172, 172);
+            border-collapse: collapse;
+        }
+    .introduction {
+      width: 250px;
+      height: 100px;
+    }    
+    .container {
+      display: flex;
+      justify-content: flex-end; /* 요소를 맨 오른쪽 끝으로 밀어냄 */
+      gap: 5px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <fieldset class="form-box">
+        <div class="login-box">
+        <label for="id">사용자 ID:</label>
+        <input type="text" id="id" class="input-box">
+        <label for="password">비밀 번호</label>
+        <input type="password" id="password" class="input-box">
+        <button type="submit" class="green">완료</button>
+        </div>
+        <div>
+          <table>
+            <tr>
+              <th><img src="image.jpg" alt="프로필이미지" width="100"></th>
+              <th>이름: 김철수<br>직무: 프론트엔트 개발자</th>
+            </tr>
+            <tr>
+              <td>자기 소개서</td>
+              <td><input type="text" placeholder="이곳에 자기소개서 작성" class="introduction"></td>
+            </tr>
+            <tr>
+              <td>관심 기술</td>
+              <td>
+                <ul>
+                  <li>HTML & CSS3</li>
+                  <li>JavaScript (ES6+)</li>
+                  <li>React</li>
+                  <li>Node.js</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>선호 음식</td>
+              <td>
+                <label for="menu1">짜장면</label>
+                <input type="checkbox" id="menu1">
+                <label for="menu2">짬뽕</label>
+                <input type="checkbox" id="menu2">
+                <label for="menu3">탕수육</label>
+                <input type="checkbox" id="menu3">
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <label for="search">검색:</label>
+                <input type="text" id="search">
+                <button type="submit"> Q1</button>
+                <button type="submit"> Q2</button>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+              <div class="container">
+              <button type="submit" class="green">전송</button>
+              <button type="reset">리셋</button>
+              </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      
+    </fieldset>
+  </form>
+</body>
+</html>
