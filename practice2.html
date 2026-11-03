@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .legend_size{
+      font-size: 18px;
+    }
+        .parent {
+      position: relative; /* 기준점이 될 부모 요소 */
+      width: 700px;
+      height: 100px;
+    }
+    .close-btn {
+      
+      top: 10px;
+      right: 10px; /* 부모의 오른쪽 끝에서 10px 안쪽으로 딱 붙임 */
+    }
+    .middle {
+      text-align: center; /* 부모 요소 안에 있는 텍스트나 인라인 요소를 중앙 정렬 */
+    }
+    .browser-window {
+    border: 1px solid #d8d8d8; /* 테두리 두께, 스타일, 색상 */
+    border-radius: 8px;       /* 모서리를 둥글게 처리 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 약간의 그림자 효과로 입체감 부여 (선택사항) */
+    }
+    .browser-header {
+    background-color: #f1f1f1; /* 상단 바의 배경색 */
+    padding: 10px;               /* 상단 바 내부의 여백 */
+    border-top-left-radius: 8px;  /* 바깥 테두리에 맞춰 왼쪽 위 모서리 둥글게 */
+    border-top-right-radius: 8px; /* 바깥 테두리에 맞춰 오른쪽 위 모서리 둥글게 */
+    display: flex;               /* 내부 요소들을 가로로 배치하기 위해 사용 */
+}
+
+.traffic-lights {
+    display: flex; /* 신호등 3개를 가로로 나란히 배치 */
+    gap: 6px;      /* 신호등 사이의 간격 */
+}
+
+.background {
+  background-color: rgb(175, 211, 223);
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.traffic-lights span {
+    width: 12px;  /* 각 신호등의 너비 */
+    height: 12px; /* 각 신호등의 높이 */
+    border-radius: 50%; /* 신호등을 원형으로 만듦 */
+}
+
+.red { background-color: #ff5f56; } /* 빨간색 신호등 */
+.yellow { background-color: #ffbd2e; } /* 노란색 신호등 */
+.green { background-color: #27c93f; } /* 초록색 신호등 */
+table {
+  border-collapse: separate; /* collapse 대신 separate 사용 */
+  border-spacing: 0;       /* 셀 사이의 빈틈 제거 */
+  border: 1px solid gray;  /* 테이블 전체 테두리 */
+  border-radius: 8px;      /* 모서리 둥글게 */
+  overflow: hidden;        /* 둥근 모서리 바깥으로 삐져나오는 내용 숨김 */
+}
+
+th, td {
+  border: 1px solid gray;
+  padding: 10px;           /* 여백을 주면 더 예쁩니다 */
+}
+.department { width: 150px;}
+.COMMENTS { width: 180px;}
+.gray { background-color: rgb(197, 190, 190);}
+.white { background-color: white;}
+.green { background-color: rgb(112, 199, 112);}
+
+  </style>
+</head>
+<body>
+  <fieldset class="browser-window">
+  <div class="browser-header">
+    <div class="traffic-lights">
+        <span class="red"></span>
+        <span class="yellow"></span>
+        <span class="green"></span>
+        <input type="text" style="border-radius: 8px; width: 600px" class="middle">
+    </div>
+</div>
+  <fieldset class="background">
+  <div class="parent middle">
+    <h1>EMPLOYEE PERFORMANCE REVIEW <span class="close-btn legend_size"> &lt;legend></span></h1>
+  </div>
+  <div>
+    <table>
+      <tr class="gray">
+      <th class="department">NAME</th>
+      <th class="department">DEPARTMENT</th>
+      <th>RATING</th>
+      <th class="COMMENTS">COMMENTS</th>
+      </tr>
+      <tr class="white">
+        <td>Sarah Kim</td>
+        <td>Sales</td>
+        <td>Lower</td>
+        <td>Exceeds goals</td>
+      </tr>
+      <tr class="green">
+        <td>Excellent</td>
+        <td>Sales</td>
+        <td>Excellent</td>
+        <td>Exceeds goals</td>
+      </tr>
+      <tr class="white">
+        <td>Andie Hairley</td>
+        <td>Educator</td>
+        <td>Lower</td>
+        <td>Permanent Comments</td>
+      </tr>
+      <tr class="gray">
+        <td>Baniman Color</td>
+        <td>Department</td>
+        <td>Lower</td>
+        <td>Manage Review</td>
+      </tr>
+    </table>
+  </div>
+
+  </fieldset>
+  </fieldset>
+</body>
+</html>
