@@ -51,9 +51,24 @@
     .main-bgcolor {
       background-color: rgb(236, 231, 231);
     }
+    .flex {display: flex;}
+    .loan-details-box {
+      width: 100%
+    }
+    .last-box {
+      width: 700px;
+      height: 90%;
+    }
+    .mid {text-align: center;
+          padding: 40px;
+    }
+    .mid button {
+      width: 200px;
+      height: 30px;
+      padding: 5px;
+    }
     .inline {display: inline;}
     .flex {display: flex;}
-    
   </style>
 </head>
 <body class="hall-background-color">
@@ -135,13 +150,19 @@
       </table>
     </fieldset>
   </div>
-  <div class="flex">
-    <fieldset class="main-bgcolor">
+  <div class="flex loan-details-box">
+  <div>
+    
+    <fieldset class="main-bgcolor flex">
+    
       <legend><strong>Loan Details</strong></legend>
+      <div>
       <label for="date">Pick Loan Period</label><br>
       <input type="date" id="date" placeholder="Start Date" style="width: 150px; height: 30px;">
       <input type="date" id="date" placeholder="End Date" style="width: 150px; height: 30px;">
       <br>
+      </div>
+    <div>
       <p><strong>Loan Type</strong></p>
       <input type="checkbox" id="loan_type">
       <label for="loan_type">General Circulation</label><br>
@@ -151,15 +172,19 @@
       <label for="loan_type">Special Collection</label><br>
       <input type="checkbox" id="loan_type">
       <label for="loan_type">E-Book</label>
+    </div>
     </fieldset>
   </div>
-  <div class="flex">
-    <fieldset class="main-bgcolor">
-      <legend><strong>Submission</strong></legend>
-      <button type="submit">Submit Loan Request</button>
+  <div>
+    <fieldset class="main-bgcolor last-box">
+      <legend style="font-size: 20px;"><strong>Submission</strong></legend>
+      <div class="mid">
+      <button type="submit" class="button_color">Submit Loan Request</button><br>
       <button type="reset" style="background-color: rgb(52, 151, 233); color: white;">Reset Form</button>
+      </div>
     </fieldset>
-    </div>
+  </div>
   </fieldset>
+  </div>
 </body>
 </html>
