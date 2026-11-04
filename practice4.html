@@ -51,6 +51,7 @@
     .main-bgcolor {
       background-color: rgb(236, 231, 231);
     }
+    .inline {display: inline;}
   </style>
 </head>
 <body class="hall-background-color">
@@ -132,7 +133,7 @@
       </table>
     </fieldset>
   </div>
-  <div>
+  <div class="inline">
     <fieldset class="main-bgcolor">
       <legend><strong>Loan Details</strong></legend>
       <label for="date">Pick Loan Period</label><br>
@@ -141,22 +142,22 @@
       <br>
       <p><strong>Loan Type</strong></p>
       <input type="checkbox" id="loan_type">
-      <label for="loan_type">General Circulation</label>
+      <label for="loan_type">General Circulation</label><br>
       <input type="checkbox" id="loan_type">
-      <label for="loan_type">Reserve List</label>
+      <label for="loan_type">Reserve List</label><br>
       <input type="checkbox" id="loan_type">
-      <label for="loan_type">Special Collection</label>
+      <label for="loan_type">Special Collection</label><br>
       <input type="checkbox" id="loan_type">
       <label for="loan_type">E-Book</label>
     </fieldset>
   </div>
-  <div>
+  <div class="inline">
     <fieldset class="main-bgcolor">
       <legend><strong>Submission</strong></legend>
       <button type="submit">Submit Loan Request</button>
       <button type="reset" style="background-color: rgb(52, 151, 233); color: white;">Reset Form</button>
     </fieldset>
-  </div>
+    </div>
   </fieldset>
 </body>
 </html>

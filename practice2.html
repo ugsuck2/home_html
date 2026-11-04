@@ -32,7 +32,18 @@
     border-top-left-radius: 8px;  /* 바깥 테두리에 맞춰 왼쪽 위 모서리 둥글게 */
     border-top-right-radius: 8px; /* 바깥 테두리에 맞춰 오른쪽 위 모서리 둥글게 */
     display: flex;               /* 내부 요소들을 가로로 배치하기 위해 사용 */
+    justify-content: center;
 }
+.browser-header-inner {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .header-spacer {
+      width: 48px; /* 신호등(12px * 3 + 간격 6px * 2) 크기에 맞춰 조절 */
+    }
 
 .traffic-lights {
     display: flex; /* 신호등 3개를 가로로 나란히 배치 */
@@ -61,7 +72,13 @@ table {
   border-radius: 8px;      /* 모서리 둥글게 */
   overflow: hidden;        /* 둥근 모서리 바깥으로 삐져나오는 내용 숨김 */
 }
-
+.browser-input {
+      border-radius: 8px;
+      width: 500px;
+      border: 1px solid #ccc;
+      padding: 4px 8px;
+      /* margin 불필요, space-between과 유령 박스가 알아서 중앙으로 잡아줍니다 */
+    }
 th, td {
   border: 1px solid gray;
   padding: 10px;           
@@ -70,22 +87,24 @@ th, td {
 .COMMENTS { width: 180px;}
 .gray { background-color: rgb(197, 190, 190);}
 .white { background-color: white;}
-.green { background-color: rgb(112, 199, 112);}
+.table_green { background-color: rgb(112, 199, 112);}
 .center-table{
-  margin-left: auto;
-  margin-right: auto;
+ margin: 0 auto;
 }
   </style>
 </head>
 <body>
   <fieldset class="browser-window">
   <div class="browser-header">
+    <div class="browser-header-inner">
     <div class="traffic-lights">
         <span class="red"></span>
         <span class="yellow"></span>
         <span class="green"></span>
-        <input type="text" style="border-radius: 8px; width: 600px" class="middle">
     </div>
+    <input type="text" class="browser-input">
+    <div class="header-spacer"></div>
+</div>
 </div>
   <fieldset class="background">
   <div class="parent middle">
@@ -105,7 +124,7 @@ th, td {
         <td>Lower</td>
         <td>Exceeds goals</td>
       </tr>
-      <tr class="green">
+      <tr class="table_green">
         <td>Excellent</td>
         <td>Sales</td>
         <td>Excellent</td>
