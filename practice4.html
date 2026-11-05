@@ -1,190 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    .top_box{
-      padding: 0 auto;
+    .top_box {
+      padding: 0;
       margin: 0 auto;
       text-align: center;
     }
-    .hall-background-color { background-color: #fdfbf2;}
-    .fieldset-bg-color {background-color: #dce8fc;}
-    h2 {color: #001c4e}
-    .second-box {background-color: rgb(245, 245, 192);}
-    .form-container {
-    display: flex; /* 내부 필드셋들을 가로로 배치 */
-    gap: 15px;     /* 필드셋 사이의 간격 */
+
+    .hall-background-color {
+      background-color: #fdfbf2;
     }
-    fieldset {border-radius: 8px;}
-    input {border-radius: 5px;
-          box-shadow: none; /* 브라우저 기본 그림자 제거 */
-          border: 1px solid #bba4a4;
-          height: 25px;
-        }
-    .button_color{
+
+    .fieldset-bg-color {
+      background-color: #dce8fc;
+    }
+
+    h2 {
+      color: #001c4e;
+    }
+
+    .second-box {
+      background-color: rgb(245, 245, 192);
+    }
+
+    .form-container {
+      display: flex;
+      gap: 15px;
+    }
+
+    fieldset {
+      border-radius: 8px;
+    }
+
+    input {
+      border-radius: 5px;
+      box-shadow: none;
+      border: 1px solid #bba4a4;
+      height: 25px;
+    }
+
+    .button_color {
       background-color: #2E7D32;
       color: white;
     }
+
     button {
       border-radius: 5px;
       padding: 5px 20px;
       margin: auto;
-
     }
+
     th,
     td {
-        border: 1px solid rgb(185, 172, 172);
-        border-collapse: collapse;
-        }
+      border: 1px solid rgb(185, 172, 172);
+      border-collapse: collapse;
+      padding: 8px;
+    }
+
     table {
       border: 1px solid rgb(185, 172, 172);
       border-collapse: collapse;
       width: 100%;
     }
-    .th-color{
+
+    .th-color {
       background-color: #424242;
       color: white;
     }
+
     .main-bgcolor {
       background-color: rgb(236, 231, 231);
     }
-    .flex {display: flex;}
-    .loan-details-box {
-      width: 100%
+
+  
+    .row-container {
+      display: flex;
+      gap: 15px;
     }
-    .last-box {
-      width: 700px;
-      height: 90%;
+
+    
+    .loan-inner-flex {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
     }
-    .mid {text-align: center;
-          padding: 40px;
+
+    .flex-1 {
+      flex: 1;
     }
+
+    .mid {
+      text-align: center;
+      padding: 27px 0;
+    }
+
     .mid button {
       width: 200px;
-      height: 30px;
+      height: 35px;
       padding: 5px;
+      margin-bottom: 10px;
     }
-    .inline {display: inline;}
-    .flex {display: flex;}
   </style>
 </head>
+
 <body class="hall-background-color">
   <fieldset class="fieldset-bg-color">
-  <div class="top_box">
-    <h2>Public Library Book Loan Application</h2>
-    <h4>Example Coding Challenge</h4>
-  </div>
-  <div>
-    <fieldset class="second-box">
-      <p style="text-align: center"><strong>Public Library</strong> - Your gateway to knowledge</p>
-    </fieldset>
-  </div>
-  <div>
-    <fieldset class="form-container main-bgcolor">
-      <legend><strong>User Infomation</strong></legend>
-      <fieldset>
-        <label for="id">User ID</label><br>
-        <input type="text" id="id" placeholder="Text Input">
-      </fieldset>
-      <fieldset>
-        <label for="name">Name</label><br>
-        <input type="text" id="name" placeholder="Text Name">
-      </fieldset>
-      <fieldset>
-        <label for="contact">Contact</label><br>
-        <input type="tel" id="contact" placeholder="Phone">
-        <input type="email" id="contact" placeholder="Email">
-      </fieldset>
-    </fieldset>
-  </div>
-  <div>
-    <fieldset class="main-bgcolor">
-      <legend><strong>Book Search</strong></legend>
-      <input type="text" placeholder="Search By Title or Author" style="width: 500px;">
-      <button type="submit" class="button_color">Search Books</button>
-      <strong>Library Inventory</strong><br>
-      <table>
-        <tr class="th-color">
-          <th>Book Id</th>
-          <th>Title</th>
-          <th>Author</th>
-          <th>Genre</th>
-          <th>Loan Status</th>
-          <th>Select</th>
-        </tr>
-        <tr>
-          <td>B001</td>
-          <td>To Kill a Mockingbird</td>
-          <td>Harper Lee</td>
-          <td>Classic</td>
-          <td>Availale</td>
-          <td><button type="submit" class="button_color">Request Loan</button></td>
-        </tr>
-        <tr>
-          <td>B002</td>
-          <td>To Kill a Mockingbird</td>
-          <td>Harper Lee</td>
-          <td>Classic</td>
-          <td>Availale</td>
-          <td><button type="submit" class="button_color">Request Loan</button></td>
-        </tr>
-        <tr>
-          <td>B003</td>
-          <td>The lies Book</td>
-          <td>Harper Lee</td>
-          <td>Classic</td>
-          <td>Availale</td>
-          <td><button type="submit" class="button_color">Request Loan</button></td>
-        </tr>
-        <tr>
-          <td>B004</td>
-          <td>To Kill a Mockingbird</td>
-          <td>Harper Lee</td>
-          <td>Classic</td>
-          <td>Availale</td>
-          <td><button type="submit" class="button_color">Request Loan</button></td>
-        </tr>
-      </table>
-    </fieldset>
-  </div>
-  <div class="flex loan-details-box">
-  <div>
-    
-    <fieldset class="main-bgcolor flex">
-    
-      <legend><strong>Loan Details</strong></legend>
-      <div>
-      <label for="date">Pick Loan Period</label><br>
-      <input type="date" id="date" placeholder="Start Date" style="width: 150px; height: 30px;">
-      <input type="date" id="date" placeholder="End Date" style="width: 150px; height: 30px;">
-      <br>
-      </div>
-    <div>
-      <p><strong>Loan Type</strong></p>
-      <input type="checkbox" id="loan_type">
-      <label for="loan_type">General Circulation</label><br>
-      <input type="checkbox" id="loan_type">
-      <label for="loan_type">Reserve List</label><br>
-      <input type="checkbox" id="loan_type">
-      <label for="loan_type">Special Collection</label><br>
-      <input type="checkbox" id="loan_type">
-      <label for="loan_type">E-Book</label>
+    <div class="top_box">
+      <h2>Public Library Book Loan Application</h2>
+      <h4>Example Coding Challenge</h4>
     </div>
-    </fieldset>
-  </div>
-  <div>
-    <fieldset class="main-bgcolor last-box">
-      <legend style="font-size: 20px;"><strong>Submission</strong></legend>
-      <div class="mid">
-      <button type="submit" class="button_color">Submit Loan Request</button><br>
-      <button type="reset" style="background-color: rgb(52, 151, 233); color: white;">Reset Form</button>
+    
+    <div>
+      <fieldset class="second-box">
+        <p style="text-align: center"><strong>Public Library</strong> - Your gateway to knowledge</p>
+      </fieldset>
+    </div>
+
+    <div>
+      <fieldset class="form-container main-bgcolor">
+        <legend><strong>User Information</strong></legend>
+        <fieldset style="flex: 1;">
+          <label for="user_id">User ID</label><br>
+          <input type="text" id="user_id" placeholder="Text Input">
+        </fieldset>
+        <fieldset style="flex: 1;">
+          <label for="name">Name</label><br>
+          <input type="text" id="name" placeholder="Text Name">
+        </fieldset>
+        <fieldset style="flex: 2;">
+          <label for="contact_tel">Contact</label><br>
+          <input type="tel" id="contact_tel" placeholder="Phone" style="margin-bottom: 5px;">
+          <input type="email" id="contact_email" placeholder="Email">
+        </fieldset>
+      </fieldset>
+    </div>
+
+    <div>
+      <fieldset class="main-bgcolor">
+        <legend><strong>Book Search</strong></legend>
+        <div style="margin-bottom: 15px;">
+          <input type="text" placeholder="Search By Title or Author" style="width: 500px;">
+          <button type="submit" class="button_color">Search Books</button>
+        </div>
+        <strong>Library Inventory</strong><br>
+        <table>
+          <tr class="th-color">
+            <th>Book Id</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Loan Status</th>
+            <th>Select</th>
+          </tr>
+          <tr>
+            <td>B001</td>
+            <td>To Kill a Mockingbird</td>
+            <td>Harper Lee</td>
+            <td>Classic</td>
+            <td>Available</td>
+            <td><button type="submit" class="button_color">Request Loan</button></td>
+          </tr>
+          <tr>
+            <td>B002</td>
+            <td>To Kill a Mockingbird</td>
+            <td>Harper Lee</td>
+            <td>Classic</td>
+            <td>Available</td>
+            <td><button type="submit" class="button_color">Request Loan</button></td>
+          </tr>
+          <tr>
+            <td>B003</td>
+            <td>The lies Book</td>
+            <td>Harper Lee</td>
+            <td>Classic</td>
+            <td>Available</td>
+            <td><button type="submit" class="button_color">Request Loan</button></td>
+          </tr>
+          <tr>
+            <td>B004</td>
+            <td>To Kill a Mockingbird</td>
+            <td>Harper Lee</td>
+            <td>Classic</td>
+            <td>Available</td>
+            <td><button type="submit" class="button_color">Request Loan</button></td>
+          </tr>
+        </table>
+      </fieldset>
+    </div>
+
+  
+    <div class="row-container">
+      
+      
+      <div class="flex-1 main-bgcolor">
+        <fieldset style="height: 100%;">
+          <legend><strong>Loan Details</strong></legend>
+          
+          
+          <div class="loan-inner-flex">
+            <div>
+              <label for="start_date">Pick Loan Period</label><br>
+              <div style="margin-top: 5px;">
+                <input type="date" id="start_date" style="width: 130px; height: 30px; margin-bottom: 5px;"><br>
+                <input type="date" id="end_date" style="width: 130px; height: 30px;">
+              </div>
+            </div>
+
+            <div>
+              <p style="margin-top: 0;"><strong>Loan Type</strong></p>
+              <input type="checkbox" id="loan_type_1">
+              <label for="loan_type_1">General Circulation</label><br>
+              <input type="checkbox" id="loan_type_2">
+              <label for="loan_type_2">Reserve List</label><br>
+              <input type="checkbox" id="loan_type_3">
+              <label for="loan_type_3">Special Collection</label><br>
+              <input type="checkbox" id="loan_type_4">
+              <label for="loan_type_4">E-Book</label>
+            </div>
+          </div>
+
+        </fieldset>
       </div>
-    </fieldset>
-  </div>
+
+      
+      <div class="flex-1 main-bgcolor">
+        <fieldset style="height: 100%;">
+          <legend style="font-size: 20px;"><strong>Submission</strong></legend>
+          <div class="mid">
+            <button type="submit" class="button_color">Submit Loan Request</button><br>
+            <button type="reset" style="background-color: rgb(52, 151, 233); color: white;">Reset Form</button>
+          </div>
+        </fieldset>
+      </div>
+
+    </div>
+
   </fieldset>
-  </div>
 </body>
+
 </html>
